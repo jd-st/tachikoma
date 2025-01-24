@@ -1,13 +1,4 @@
 return {
-  -- { "ellisonleao/gruvbox.nvim" },
-  -- {
-  --   "AlexvZyl/nordic.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   config = function()
-  --     require("nordic").load()
-  --   end,
-  -- },
   {
     "projekt0n/github-nvim-theme",
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
@@ -20,8 +11,14 @@ return {
     },
   },
   {
-    "nvimdev/dashboard-nvim",
-    enabled = false,
+    "folke/snacks.nvim",
+    opts = { dashboard = { enabled = false } },
+  },
+  {
+    "snacks.nvim",
+    opts = {
+      indent = { enabled = false },
+    },
   },
   {
     "nvim-lualine/lualine.nvim",
