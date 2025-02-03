@@ -3,7 +3,19 @@
 -- Add any additional options here
 
 vim.opt.relativenumber = false
-vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.expandtab = true
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
+
+-- Ocaml setup
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "ocaml", "ocaml.interface", "ocaml.source", "ocaml.menhir", "ocaml.ocamllex", "reason" },
+  callback = function()
+    print("Setting tabstop for Ocaml file")
+    -- vim.opt.tabstop = 2
+    vim.cmd("set tabstop=2")
+  end,
+})
+vim.opt.rtp:prepend("/Users/jmsdnns/.opam/sandbox/share/ocp-indent/vim")
+local opamshare = vim.fn.system("opam config var share"):gsub("\n$", "")
+vim.opt.rtp:append(opamshare .. "/merlin/vim")
