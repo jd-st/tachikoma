@@ -11,9 +11,8 @@ vim.opt.guicursor = "n-v-i-c:block-Cursor"
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "ocaml", "ocaml.interface", "ocaml.source", "ocaml.menhir", "ocaml.ocamllex", "reason" },
   callback = function()
-    print("Setting tabstop for Ocaml file")
-    -- vim.opt.tabstop = 2
-    vim.cmd("set tabstop=2")
+    vim.opt.tabstop = 2
+    --vim.cmd("set tabstop=2")
   end,
 })
 vim.opt.rtp:prepend("/Users/jmsdnns/.opam/sandbox/share/ocp-indent/vim")
