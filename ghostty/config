@@ -5,6 +5,8 @@ bold-is-bright = true
 window-theme = ghostty
 window-padding-x = 15
 window-padding-y = 15
+window-height = 45
+window-width = 100
 gtk-titlebar = false
 gtk-tabs-location = bottom
 adw-toolbar-style = flat
@@ -39,4 +41,3 @@ window-inherit-working-directory = true
 window-new-tab-position = current
 window-save-state = never
 quit-after-last-window-closed = true
-
