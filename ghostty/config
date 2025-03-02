@@ -41,3 +41,7 @@ window-inherit-working-directory = true
 window-new-tab-position = current
 window-save-state = never
 quit-after-last-window-closed = true
+
+# Keybindings
+keybind = ctrl+shift+[=previous_tab
+keybind = ctrl+shift+]=next_tab
