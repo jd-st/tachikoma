@@ -9,6 +9,7 @@ return {
       formatters_by_ft = {
         ["python"] = { "ruff" },
         ["sql"] = { "sqlfluff" },
+        ["ocaml"] = { "ocamlformat" },
       },
       formatters = {
         sqlfluff = {
@@ -17,6 +18,13 @@ return {
           stdin = true,
           cwd = util.root_file({
             ".sqlfluff",
+          }),
+        },
+        ocamlformat = {
+          command = "ocamlformat",
+          stdin = true,
+          cwd = util.root_file({
+            ".ocamlformat",
           }),
         },
       },
