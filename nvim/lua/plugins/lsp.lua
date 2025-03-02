@@ -3,6 +3,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       inlay_hints = { enabled = false },
+      autoformat = true,
       servers = {
         ocamllsp = {
           cmd = { "ocamllsp", "--fallback-read-dot-merlin" },
@@ -17,6 +18,10 @@ return {
           settings = {
             ocaml = {},
           },
+        },
+        pyright = {
+          mason = false,
+          autostart = false,
         },
       },
     },
