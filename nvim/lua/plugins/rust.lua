@@ -1,6 +1,7 @@
 return {
   {
     "mrcjkb/rustaceanvim",
+    version = "^5",
     lazy = false,
   },
   {
@@ -10,6 +11,12 @@ return {
       completion = {
         cmp = { enabled = true },
       },
+    },
+    lsp = {
+      enabled = true,
+      actions = true,
+      completion = true,
+      hover = true,
     },
   },
 }
