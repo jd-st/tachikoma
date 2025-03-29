@@ -7,6 +7,10 @@ vim.opt.tabstop = 4
 vim.opt.expandtab = true
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
 
+-- Python
+vim.g.lazyvim_python_lsp = "pyright"
+vim.g.lazyvim_python_ruff = "ruff"
+
 -- Ocaml setup
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "ocaml", "ocaml.interface", "ocaml.source", "ocaml.menhir", "ocaml.ocamllex", "reason" },
