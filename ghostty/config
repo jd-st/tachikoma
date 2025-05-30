@@ -1,6 +1,7 @@
 # UI
-font-family = "FiraCode Nerd Font Medium"
+font-family = "FiraCode Nerd Font Mono"
 font-size = 13
+font-style-bold = false
 bold-is-bright = true
 window-theme = ghostty
 window-padding-x = 15
