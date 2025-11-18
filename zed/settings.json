@@ -79,6 +79,6 @@
     "metrics": false
   },
   "agent": {
-    "enabled": false,
+    "enabled": false
   }
 }
