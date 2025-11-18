@@ -1,6 +1,6 @@
 # UI
 font-family = "FiraCode Nerd Font Mono"
-font-size = 13
+font-size = 15
 font-style-bold = false
 bold-is-bright = true
 window-theme = ghostty
@@ -42,7 +42,10 @@ window-inherit-working-directory = true
 window-new-tab-position = current
 window-save-state = never
 quit-after-last-window-closed = true
+clipboard-paste-protection = false
+bell-features = no-system
 
 # Keybindings
 keybind = ctrl+shift+[=previous_tab
 keybind = ctrl+shift+]=next_tab
+keybind = shift+enter=text:\x1b\r
