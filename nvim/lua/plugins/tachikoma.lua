@@ -12,12 +12,21 @@ return {
   },
   {
     "folke/snacks.nvim",
-    opts = { dashboard = { enabled = false } },
-  },
-  {
-    "snacks.nvim",
     opts = {
+      dashboard = { enabled = false },
       indent = { enabled = false },
+      picker = {
+        sources = {
+          explorer = {
+            follow_file = true,
+            layout = {
+              layout = {
+                width = 30,
+              },
+            },
+          },
+        },
+      },
     },
   },
   {
