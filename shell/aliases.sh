@@ -9,9 +9,9 @@ alias vi="nvim"
 alias vim="nvim"
 
 if [[ $(uname) == "Linux" ]]; then
-    alias ls='ls -F --color --group-directories-first'
-    alias pbcopy="xclip -selection c"
-    alias pbpaste="xclip -selection clipboard o"
+	alias ls='ls -F --color --group-directories-first'
+	alias pbcopy="xclip -selection c"
+	alias pbpaste="xclip -selection clipboard o"
 elif [[ $(uname) == "Darwin" ]]; then
-    alias ls="ls -F -G"
+	alias ls="ls -F -G"
 fi
