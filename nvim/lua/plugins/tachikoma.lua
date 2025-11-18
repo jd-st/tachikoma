@@ -30,6 +30,37 @@ return {
         component_separators = { left = "\\", right = "/" },
         section_separators = { left = "", right = "" },
       },
+      sections = {
+        -- truncate git branch name if over 30 characters
+        lualine_b = {
+          {
+            "branch",
+            fmt = function(str)
+              if vim.api.nvim_strwidth(str) > 30 then
+                return ("%s…"):format(str:sub(1, 29))
+              end
+
+              return str
+            end,
+          },
+        },
+        -- truncate filename if over 40 characters
+        lualine_c = {
+          {
+            "filename",
+            file_status = true,
+            newfile_status = true,
+            path = 4,
+            fmt = function(str)
+              if vim.api.nvim_strwidth(str) > 40 then
+                return ("…%s"):format(str:sub(-39))
+              end
+
+              return str
+            end,
+          },
+        },
+      },
     },
   },
   {
