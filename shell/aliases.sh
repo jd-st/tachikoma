@@ -13,5 +13,6 @@ if [[ $(uname) == "Linux" ]]; then
 	alias pbcopy="xclip -selection c"
 	alias pbpaste="xclip -selection clipboard o"
 elif [[ $(uname) == "Darwin" ]]; then
-	alias ls="ls -F -G"
+	#alias ls="ls -F -G"
+	alias ls='gls -F --color --group-directories-first'
 fi
