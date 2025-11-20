@@ -7,8 +7,16 @@ return {
     opts = {
       event = "BufWritePre",
       formatters_by_ft = {
-        ["python"] = { "ruff_format", "ruff_organize_imports" },
-        ["sql"] = { "sqlfluff" },
+        sql = { "sqlfluff" },
+        typescript = { "eslint_d" },
+        javascript = { "eslint_d" },
+        javascriptreact = { "eslint_d" },
+        typescriptreact = { "prettier" },
+        json = { "eslint_d" },
+        jsonc = { "eslint_d" },
+        yaml = { "eslint_d" },
+        html = { "eslint_d" },
+        python = { "black" },
       },
       formatters = {
         sqlfluff = {

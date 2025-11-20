@@ -171,7 +171,19 @@ return {
         },
         filtered_items = {
           hide_dotfiles = false,
-          hide_gitignored = false,
+          hide_gitignored = true,
+          hide_by_name = {
+            ".git",
+            ".svn",
+            ".hg",
+            ".DS_Store",
+            "Thumbs.db",
+            "CVS",
+            ".ruby-lsp",
+            ".retool_types",
+            ".cache",
+            "retool.config.json",
+          },
         },
       },
       window = {
