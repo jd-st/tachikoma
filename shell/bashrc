@@ -18,5 +18,43 @@ source $TACHIKOMA/completion.sh
 # General Env
 export EDITOR="nvim"
 export PAGER="less"
+export PATH="$HOME/Code/bin:$PATH"
 
-# Add other things here
+# Core Utils
+export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+
+# Apple
+export BASH_SILENCE_DEPRECATION_WARNING=1
+export PATH="/usr/local/bin:$PATH"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# GCloud
+export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
+
+# Rust
+export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# Java 17
+#export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+#export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
+# Java 21
+export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk@21/include"
+
+# Dot Net
+export DOTNET_ROOT="/opt/homebrew/opt/dotnet@8/libexec"
+export PATH="/opt/homebrew/opt/dotnet@8/bin:$PATH"
+
+# Ruby
+eval "$(rbenv init - --no-rehash bash)"
+
+# Javascript
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+
+# Go
+export GOTOOLCHAIN=local
+export GOPATH="$HOME/.go"
+export PATH="$HOME/.go/bin:$PATH"
