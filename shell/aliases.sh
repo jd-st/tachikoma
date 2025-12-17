@@ -7,6 +7,8 @@ alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
 alias vi="nvim"
 alias vim="nvim"
+alias p="pnpm"
+alias dpg="pushd ~/Code/stainless/services/app && docker exec -it $(docker ps | grep postgres | cut -f 1 -d ' ') bash && popd"
 
 if [[ $(uname) == "Linux" ]]; then
 	alias ls='ls -F --color --group-directories-first'
