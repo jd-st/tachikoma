@@ -31,6 +31,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # GCloud
 export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
 
+# Python
+source "$HOME/.rye/env"
+
 # Rust
 export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -48,6 +51,10 @@ export PATH="/opt/homebrew/opt/dotnet@8/bin:$PATH"
 
 # Ruby
 eval "$(rbenv init - --no-rehash bash)"
+
+# PHP
+export PATH="/opt/homebrew/opt/php@8.4/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.4/sbin:$PATH"
 
 # Javascript
 export NVM_DIR="$HOME/.nvm"
