@@ -11,5 +11,8 @@ elif [[ $(uname) == "Darwin" ]]; then
         if [ -f /opt/homebrew/completions/bash/brew ]; then
             . /opt/homebrew/completions/bash/brew
         fi
+        if [ -f "/opt/homebrew/etc/profile.d/bash_completion.sh" ]; then
+            . /opt/homebrew/etc/profile.d/bash_completion.sh
+        fi
     fi
 fi
