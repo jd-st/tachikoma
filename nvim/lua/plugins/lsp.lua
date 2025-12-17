@@ -30,22 +30,6 @@ return {
             },
           },
         },
-        eslint = {
-          settings = {
-            useFlatConfig = true,
-            format = { enable = true },
-            options = {
-              overrideConfig = {
-                rules = {
-                  ["@typescript-eslint/no-base-to-string"] = "off",
-                  ["@typescript-eslint/no-floating-promises"] = "off",
-                  ["@typescript-eslint/no-misused-promises"] = "off",
-                  ["@typescript-eslint/no-deprecated"] = "off",
-                },
-              },
-            },
-          },
-        },
         yamlls = {
           settings = {
             yaml = {

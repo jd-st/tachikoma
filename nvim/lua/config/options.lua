@@ -8,6 +8,7 @@ vim.opt.shiftwidth = 2
 vim.opt.colorcolumn = "110"
 vim.opt.expandtab = true
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
+--vim.g.lazyvim_eslint_auto_format = true
 
 -- trim trailing whitespace
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
